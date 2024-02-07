@@ -40,12 +40,12 @@ describe('simpleCalculator tests', () => {
   test('should return null for invalid action', () => {
     const [a, b] = getTwoNumbers();
     const result = simpleCalculator({ a, b, action: undefined });
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
     const [a, b] = [undefined, undefined];
     const result = simpleCalculator({ a, b, action: Action.Add });
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 });
