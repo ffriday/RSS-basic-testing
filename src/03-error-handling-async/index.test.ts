@@ -1,5 +1,4 @@
 // Uncomment the code below and write your tests
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {
   throwError,
   throwCustomError,

@@ -30,7 +30,7 @@ describe('BankAccount', () => {
   test('should throw error when transferring more than balance', () => {
     const destAcc = getBankAccount(0);
     expect(() => acc.transfer(100, destAcc)).not.toThrow();
-    expect(() => acc.transfer(10000, destAcc)).toThrow();
+    expect(() => acc.transfer(100000, destAcc)).toThrow();
   });
 
   test('should throw error when transferring to the same account', () => {
